@@ -1,0 +1,624 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "surveykit-session-5",
+ "title": "SurveyKit session.json (schema 5; v4 adds optional tolerances/templates/sync/field blocks)",
+ "type": "object",
+ "required": [
+  "schema_version",
+  "project",
+  "datum",
+  "traverse",
+  "observations"
+ ],
+ "properties": {
+  "schema_version": {
+   "const": 5
+  },
+  "project": {
+   "type": "object",
+   "properties": {
+    "title": {
+     "type": "string"
+    },
+    "job_no": {
+     "type": "string"
+    },
+    "client": {
+     "type": "string"
+    },
+    "surveyor": {
+     "type": "string"
+    },
+    "date": {
+     "type": "string"
+    },
+    "location": {
+     "type": "string"
+    },
+    "instrument": {
+     "type": "string"
+    },
+    "notes": {
+     "type": "string"
+    },
+    "project_no": {
+     "type": "string"
+    },
+    "client_code": {
+     "type": "string"
+    },
+    "folder_name": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "title"
+   ]
+  },
+  "datum": {
+   "type": "object",
+   "properties": {
+    "horizontal": {
+     "type": "string"
+    },
+    "vertical": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "horizontal"
+   ]
+  },
+  "traverse": {
+   "type": "object",
+   "properties": {
+    "kind": {
+     "enum": [
+      "closed",
+      "link",
+      "open"
+     ]
+    },
+    "mode": {
+     "enum": [
+      "angles",
+      "bearings"
+     ]
+    },
+    "method": {
+     "enum": [
+      "bowditch",
+      "transit",
+      "none"
+     ]
+    },
+    "start_e": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "start_n": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "end_e": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "end_n": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "start_azimuth": {
+     "type": "string"
+    },
+    "closing_azimuth": {
+     "type": "string"
+    },
+    "adjust_angles": {
+     "type": "boolean"
+    }
+   },
+   "required": [
+    "kind",
+    "mode"
+   ]
+  },
+  "observations": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "station": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ]
+     },
+     "bs": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ]
+     },
+     "fs": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ]
+     },
+     "h_angle": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ]
+     },
+     "bearing": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ]
+     },
+     "distance": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ]
+     },
+     "dist_type": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ]
+     },
+     "zenith": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ]
+     },
+     "hi": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ]
+     },
+     "ht": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ]
+     },
+     "code": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ]
+     },
+     "description": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ]
+     },
+     "attributes": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ]
+     },
+     "notes": {
+      "type": [
+       "string",
+       "number",
+       "null"
+      ]
+     }
+    },
+    "additionalProperties": true
+   }
+  },
+  "levelling": {
+   "type": "object",
+   "properties": {
+    "start_rl": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "close_rl": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "length_km": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "rows": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "station": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "bs": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "is": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "fs": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "remark": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       }
+      },
+      "additionalProperties": true
+     }
+    }
+   }
+  },
+  "settings": {
+   "type": "object",
+   "properties": {
+    "ang_k": {
+     "type": "number"
+    },
+    "ratio": {
+     "type": "number"
+    },
+    "lev_k": {
+     "type": "number"
+    },
+    "short_leg": {
+     "type": "number"
+    },
+    "long_leg": {
+     "type": "number"
+    },
+    "hi_min": {
+     "type": "number"
+    },
+    "hi_max": {
+     "type": "number"
+    },
+    "ht_min": {
+     "type": "number"
+    },
+    "ht_max": {
+     "type": "number"
+    },
+    "zenith_warn": {
+     "type": "number"
+    },
+    "required_photo_types": {},
+    "pdop_max": {
+     "type": "number"
+    },
+    "sats_min": {
+     "type": "number"
+    },
+    "rms_h_max": {
+     "type": "number"
+    },
+    "rms_v_max": {
+     "type": "number"
+    },
+    "ang_const": {
+     "type": "number"
+    },
+    "ang_cap": {
+     "type": "number"
+    },
+    "lin_const_mm": {
+     "type": "number"
+    },
+    "lin_mode": {}
+   }
+  },
+  "gnss": {
+   "type": "object",
+   "properties": {
+    "points": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "id": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "lat": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "lon": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "e": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "n": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "height": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "ant_h": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "pdop": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "hdop": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "sats": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "solution": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "rms_h": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "rms_v": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "datetime": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "code": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "attributes": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       },
+       "notes": {
+        "type": [
+         "string",
+         "number",
+         "null"
+        ]
+       }
+      },
+      "additionalProperties": true
+     }
+    }
+   }
+  },
+  "imported": {
+   "type": "object"
+  },
+  "design": {
+   "type": "object"
+  },
+  "dem": {
+   "type": "object"
+  },
+  "branding": {
+   "type": "object"
+  },
+  "cutfill": {
+   "type": "object"
+  },
+  "setout": {
+   "type": "object"
+  },
+  "plan": {
+   "type": "object"
+  },
+  "feature_codes": {
+   "type": "object"
+  },
+  "tolerances": {
+   "type": "object",
+   "properties": {
+    "jurisdiction": {
+     "enum": [
+      "GENERIC",
+      "QLD",
+      "NSW",
+      "VIC",
+      "SA",
+      "WA",
+      "TAS",
+      "NT",
+      "ACT",
+      "PNG"
+     ]
+    },
+    "profile": {
+     "type": "string"
+    }
+   }
+  },
+  "templates": {
+   "type": "object"
+  },
+  "sync": {
+   "type": "object",
+   "properties": {
+    "rev": {
+     "type": "integer",
+     "minimum": 0
+    },
+    "project": {
+     "type": "string"
+    }
+   }
+  },
+  "field": {
+   "type": "object",
+   "description": "Field Mode extras (equipment, gear, benchmarks) – optional"
+  },
+  "photos": {
+   "type": "object",
+   "additionalProperties": {
+    "type": "array",
+    "items": {
+     "type": "object",
+     "required": [
+      "id",
+      "type",
+      "data_b64"
+     ],
+     "properties": {
+      "id": {
+       "type": "string",
+       "pattern": "^[A-Za-z0-9_-]{1,64}$"
+      },
+      "type": {
+       "enum": [
+        "Setup (instrument over point, tripod)",
+        "Measurement/reading",
+        "Instrument height",
+        "Location (surroundings, marker)",
+        "Other"
+       ]
+      },
+      "caption": {
+       "type": "string"
+      },
+      "filename": {
+       "type": "string"
+      },
+      "uploaded_at": {
+       "type": "string"
+      },
+      "mime": {
+       "enum": [
+        "image/jpeg",
+        "image/png"
+       ]
+      },
+      "width": {
+       "type": "integer"
+      },
+      "height": {
+       "type": "integer"
+      },
+      "data_b64": {
+       "type": "string",
+       "pattern": "^[A-Za-z0-9+/=\\s]*$",
+       "minLength": 4
+      }
+     }
+    }
+   }
+  },
+  "map": {
+   "type": "object"
+  }
+ },
+ "additionalProperties": true
+}

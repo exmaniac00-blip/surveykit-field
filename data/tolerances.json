@@ -1,0 +1,1452 @@
+{
+ "generated_by": "surveykit.tolerances",
+ "statuses": {
+  "verified-statutory": "✅ verified – statutory",
+  "verified-professional-standard": "✅ verified – professional standard",
+  "common-practice-unverified": "⚠️ common practice – UNVERIFIED"
+ },
+ "sources": {
+  "qld-csr-8.02": {
+   "title": "Cadastral Survey Requirements v8.02 (standards under the Survey and Mapping Infrastructure Act 2003), Qld Dept of Natural Resources and Mines, Manufacturing and Regional and Rural Development, effective 20 January 2025",
+   "url": "https://www.resources.qld.gov.au/?a=109113%3Apolicy_registry%2Fcadastral-survey-requirements.pdf"
+  },
+  "nsw-ssir-2024": {
+   "title": "Surveying and Spatial Information Regulation 2024 (NSW), commenced 1 March 2025",
+   "url": "https://classic.austlii.edu.au/au/legis/nsw/consol_reg/sasir2024453/s16.html"
+  },
+  "nsw-ssir-2017": {
+   "title": "Surveying and Spatial Information Regulation 2017 (NSW) – repealed 1 March 2025 and replaced by the 2024 Regulation",
+   "url": "https://legislation.nsw.gov.au/view/whole/html/inforce/current/sl-2017-0486"
+  },
+  "nsw-scims-classes": {
+   "title": "NSW Spatial Services – Accuracy of marks (SCIMS height Class definitions)",
+   "url": "https://www.spatial.nsw.gov.au/surveying/scims_online/accuracy_of_marks"
+  },
+  "vic-scsr-2025": {
+   "title": "Surveying (Cadastral Surveys) Regulations 2025 (Vic), regulation 7",
+   "url": "https://classic.austlii.edu.au/au/legis/vic/consol_reg/ssr2025453/s7.html"
+  },
+  "vic-scsr-2015": {
+   "title": "Surveying (Cadastral Surveys) Regulations 2015 (Vic), S.R. No. 43/2015, regulation 7 (superseded by the 2025 Regulations)",
+   "url": "https://faolex.fao.org/docs/pdf/vic152366.pdf"
+  },
+  "sa-csg-6.0": {
+   "title": "Cadastral Survey Guidelines V6.0 (29 September 2023), Office of the Surveyor-General SA – Table 13.1 summarising Notice of the Surveyor-General (No 1) – Accuracy",
+   "url": "https://www.dhud.sa.gov.au/__data/assets/pdf_file/0004/1054489/cadastral_survey_guidelines.pdf.pdf"
+  },
+  "wa-spp03-v2": {
+   "title": "Landgate SPP-03 Survey Guidelines, Version 2 (15/07/2022)",
+   "url": "https://www.landgate.wa.gov.au/land-and-property/land-transactions-hub/land-transaction-policy-and-procedure-guides/survey-and-plan/survey-practice-guidelines/spp-03-survey-guidelines/"
+  },
+  "wa-gsp-1961": {
+   "title": "Licensed Surveyors (General Surveying Practice) Regulations 1961 (WA), reprint 05-a0-05 as at 6 Dec 2013, regulation 34",
+   "url": "https://cdn.lslb.wa.gov.au/wp-content/uploads/2020/01/Licensed-Surveyors-General-Surveying-Practice-Regulations-1961-05-a0-05.pdf"
+  },
+  "tas-sd-2020": {
+   "title": "Survey Directions Tasmania (pursuant to the Surveyors Act 2002), revision 011020",
+   "url": "https://nre.tas.gov.au/Documents/SURVEY%20DIRECTIONS%20TASMANIA%20011020.pdf"
+  },
+  "act-pd-2021": {
+   "title": "Surveyors (Surveyor-General) Practice Directions 2021 (No. 1), ACT Disallowable Instrument DI2021-51",
+   "url": "https://www.legislation.act.gov.au/di/2021-51/"
+  },
+  "act-g10-2012": {
+   "title": "ACT Surveyor-General Guideline No. 10 – GNSS and Cadastral Surveys (29/10/2012)",
+   "url": "https://www.planning.act.gov.au/__data/assets/pdf_file/0004/2320537/surveyor-general-guideline-10-gnss-and-cadastral-surveys.pdf"
+  },
+  "png-scr-1969": {
+   "title": "Survey Co-ordination Regulation 1969 (Papua New Guinea), Schedule 4 (reprint to 25 Nov 2006, FAOLEX copy)",
+   "url": "https://faolex.fao.org/docs/pdf/png54857.pdf"
+  },
+  "surveykit": {
+   "title": "SurveyKit default (common practice, not from an authoritative source)",
+   "url": ""
+  }
+ },
+ "order": [
+  "QLD",
+  "NSW",
+  "VIC",
+  "SA",
+  "WA",
+  "TAS",
+  "NT",
+  "ACT",
+  "PNG",
+  "GENERIC"
+ ],
+ "jurisdictions": {
+  "GENERIC": {
+   "name": "SurveyKit generic (no jurisdiction)",
+   "default": "default",
+   "profiles": {
+    "default": {
+     "label": "SurveyKit defaults (common practice)",
+     "values": {
+      "ang_const": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "ang_k": {
+       "value": 30.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "ang_cap": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "lin_const_mm": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "ratio": {
+       "value": 5000,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "lin_mode": {
+       "value": "sum",
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "12√K mm (3rd-order / SCIMS Class LC level) used as the SurveyKit default – no jurisdiction-specific levelling tolerance verified."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    }
+   }
+  },
+  "QLD": {
+   "name": "Queensland",
+   "default": "standard",
+   "profiles": {
+    "standard": {
+     "label": "Cadastral – standard terrain",
+     "values": {
+      "ang_const": {
+       "value": 0.0,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "Lesser of 2.5 × 10\" × √(number of angles) or 2 minutes."
+      },
+      "ang_k": {
+       "value": 25.0,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "Lesser of 2.5 × 10\" × √(number of angles) or 2 minutes."
+      },
+      "ang_cap": {
+       "value": 120.0,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "Lesser of 2.5 × 10\" × √(number of angles) or 2 minutes."
+      },
+      "lin_const_mm": {
+       "value": 10.0,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "10 mm + 1 part in 5000 of the total distance traversed."
+      },
+      "ratio": {
+       "value": 5000,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "10 mm + 1 part in 5000 of the total distance traversed."
+      },
+      "lin_mode": {
+       "value": "sum",
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "10 mm + 1 part in 5000 of the total distance traversed."
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "12√K mm (3rd-order / SCIMS Class LC level) used as the SurveyKit default – no jurisdiction-specific levelling tolerance verified."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    },
+    "rough": {
+     "label": "Cadastral – rough or broken terrain",
+     "values": {
+      "ang_const": {
+       "value": 0.0,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "Lesser of 2.5 × 10\" × √(number of angles) or 2 minutes."
+      },
+      "ang_k": {
+       "value": 25.0,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "Lesser of 2.5 × 10\" × √(number of angles) or 2 minutes."
+      },
+      "ang_cap": {
+       "value": 120.0,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "Lesser of 2.5 × 10\" × √(number of angles) or 2 minutes."
+      },
+      "lin_const_mm": {
+       "value": 20.0,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "20 mm + 1 part in 2500 (rough or broken terrain)."
+      },
+      "ratio": {
+       "value": 2500,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "20 mm + 1 part in 2500 (rough or broken terrain)."
+      },
+      "lin_mode": {
+       "value": "sum",
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "20 mm + 1 part in 2500 (rough or broken terrain)."
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "12√K mm (3rd-order / SCIMS Class LC level) used as the SurveyKit default – no jurisdiction-specific levelling tolerance verified."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    },
+    "other_work": {
+     "label": "Cadastral – surround includes another surveyor's work",
+     "values": {
+      "ang_const": {
+       "value": 0.0,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "Lesser of 2.5 × 10\" × √(number of angles) or 2 minutes."
+      },
+      "ang_k": {
+       "value": 25.0,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "Lesser of 2.5 × 10\" × √(number of angles) or 2 minutes."
+      },
+      "ang_cap": {
+       "value": 120.0,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "Lesser of 2.5 × 10\" × √(number of angles) or 2 minutes."
+      },
+      "lin_const_mm": {
+       "value": 20.0,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "20 mm + 1 part in 2000 (another surveyor's work in the surround)."
+      },
+      "ratio": {
+       "value": 2000,
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "20 mm + 1 part in 2000 (another surveyor's work in the surround)."
+      },
+      "lin_mode": {
+       "value": "sum",
+       "source": "qld-csr-8.02",
+       "clause": "3.4.2 Measurement accuracy",
+       "status": "verified-statutory",
+       "note": "20 mm + 1 part in 2000 (another surveyor's work in the surround)."
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "12√K mm (3rd-order / SCIMS Class LC level) used as the SurveyKit default – no jurisdiction-specific levelling tolerance verified."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    }
+   }
+  },
+  "NSW": {
+   "name": "New South Wales",
+   "default": "cadastral",
+   "profiles": {
+    "cadastral": {
+     "label": "Cadastral",
+     "values": {
+      "ang_const": {
+       "value": 10.0,
+       "source": "nsw-ssir-2024",
+       "clause": "s 16(1)",
+       "status": "verified-statutory",
+       "note": "Lesser of 10\" + 10\"√n or 2′ (n = traverse angular stations)."
+      },
+      "ang_k": {
+       "value": 10.0,
+       "source": "nsw-ssir-2024",
+       "clause": "s 16(1)",
+       "status": "verified-statutory",
+       "note": "Lesser of 10\" + 10\"√n or 2′ (n = traverse angular stations)."
+      },
+      "ang_cap": {
+       "value": 120.0,
+       "source": "nsw-ssir-2024",
+       "clause": "s 16(1)",
+       "status": "verified-statutory",
+       "note": "Lesser of 10\" + 10\"√n or 2′ (n = traverse angular stations)."
+      },
+      "lin_const_mm": {
+       "value": 15.0,
+       "source": "nsw-ssir-2017",
+       "clause": "cl 26(2) (2017 Regulation)",
+       "status": "verified-statutory",
+       "note": "Misclose vector ≤ 15 mm + 100 ppm of the perimeter. Verified in the repealed 2017 Regulation; the clause number in the 2024 Regulation was not verified."
+      },
+      "ratio": {
+       "value": 10000,
+       "source": "nsw-ssir-2017",
+       "clause": "cl 26(2) (2017 Regulation)",
+       "status": "verified-statutory",
+       "note": "Misclose vector ≤ 15 mm + 100 ppm of the perimeter. Verified in the repealed 2017 Regulation; the clause number in the 2024 Regulation was not verified."
+      },
+      "lin_mode": {
+       "value": "sum",
+       "source": "nsw-ssir-2017",
+       "clause": "cl 26(2) (2017 Regulation)",
+       "status": "verified-statutory",
+       "note": "Misclose vector ≤ 15 mm + 100 ppm of the perimeter. Verified in the repealed 2017 Regulation; the clause number in the 2024 Regulation was not verified."
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "nsw-scims-classes",
+       "clause": "Height Class LC",
+       "status": "verified-professional-standard",
+       "note": "Class LC (3rd order) levelling: forward & backrun misclose < 12√d mm. A SCIMS class definition, applied here as the job tolerance."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    }
+   }
+  },
+  "VIC": {
+   "name": "Victoria",
+   "default": "cadastral",
+   "profiles": {
+    "cadastral": {
+     "label": "Cadastral",
+     "values": {
+      "ang_const": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "Reg 7(2) only requires angular measurements to be verified – no numeric angular misclose found; SurveyKit default used."
+      },
+      "ang_k": {
+       "value": 30.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "Reg 7(2) only requires angular measurements to be verified – no numeric angular misclose found; SurveyKit default used."
+      },
+      "ang_cap": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "Reg 7(2) only requires angular measurements to be verified – no numeric angular misclose found; SurveyKit default used."
+      },
+      "lin_const_mm": {
+       "value": 15.0,
+       "source": "vic-scsr-2025",
+       "clause": "r 7(1)(a)",
+       "status": "verified-statutory",
+       "note": "Misclosure vector ≤ 15 mm + 100 ppm of the perimeter."
+      },
+      "ratio": {
+       "value": 10000,
+       "source": "vic-scsr-2025",
+       "clause": "r 7(1)(a)",
+       "status": "verified-statutory",
+       "note": "Misclosure vector ≤ 15 mm + 100 ppm of the perimeter."
+      },
+      "lin_mode": {
+       "value": "sum",
+       "source": "vic-scsr-2025",
+       "clause": "r 7(1)(a)",
+       "status": "verified-statutory",
+       "note": "Misclosure vector ≤ 15 mm + 100 ppm of the perimeter."
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "vic-scsr-2015",
+       "clause": "r 7(3) (2015 Regulations)",
+       "status": "verified-statutory",
+       "note": "12√k mm (k = levelling route length, km). The 2025 Regulations r 7(1)(d) set a height accuracy formula that could not be read in the source text – check it."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    }
+   }
+  },
+  "SA": {
+   "name": "South Australia",
+   "default": "cadastral",
+   "profiles": {
+    "cadastral": {
+     "label": "Cadastral",
+     "values": {
+      "ang_const": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "No numeric angular misclose found – SurveyKit default."
+      },
+      "ang_k": {
+       "value": 30.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "No numeric angular misclose found – SurveyKit default."
+      },
+      "ang_cap": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "No numeric angular misclose found – SurveyKit default."
+      },
+      "lin_const_mm": {
+       "value": 20.0,
+       "source": "sa-csg-6.0",
+       "clause": "13.4 Table 13.1 (Notice of the Surveyor-General No 1)",
+       "status": "verified-professional-standard",
+       "note": "Polygon misclosure 0.02 m + 1/20000 (all accuracy zones)."
+      },
+      "ratio": {
+       "value": 20000,
+       "source": "sa-csg-6.0",
+       "clause": "13.4 Table 13.1 (Notice of the Surveyor-General No 1)",
+       "status": "verified-professional-standard",
+       "note": "Polygon misclosure 0.02 m + 1/20000 (all accuracy zones)."
+      },
+      "lin_mode": {
+       "value": "sum",
+       "source": "sa-csg-6.0",
+       "clause": "13.4 Table 13.1 (Notice of the Surveyor-General No 1)",
+       "status": "verified-professional-standard",
+       "note": "Polygon misclosure 0.02 m + 1/20000 (all accuracy zones)."
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "12√K mm (3rd-order / SCIMS Class LC level) used as the SurveyKit default – no jurisdiction-specific levelling tolerance verified."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    }
+   }
+  },
+  "WA": {
+   "name": "Western Australia",
+   "default": "urban",
+   "profiles": {
+    "urban": {
+     "label": "Urban survey",
+     "values": {
+      "ang_const": {
+       "value": 0.0,
+       "source": "wa-spp03-v2",
+       "clause": "13.1 Angular Misclose",
+       "status": "verified-professional-standard",
+       "note": "20\" × √(number of angles) or 1′30\", whichever is the lesser."
+      },
+      "ang_k": {
+       "value": 20.0,
+       "source": "wa-spp03-v2",
+       "clause": "13.1 Angular Misclose",
+       "status": "verified-professional-standard",
+       "note": "20\" × √(number of angles) or 1′30\", whichever is the lesser."
+      },
+      "ang_cap": {
+       "value": 90.0,
+       "source": "wa-spp03-v2",
+       "clause": "13.1 Angular Misclose",
+       "status": "verified-professional-standard",
+       "note": "20\" × √(number of angles) or 1′30\", whichever is the lesser."
+      },
+      "lin_const_mm": {
+       "value": 20.0,
+       "source": "wa-spp03-v2",
+       "clause": "13.2 Linear Misclose",
+       "status": "verified-professional-standard",
+       "note": "0.02 m or 1:12,000 of the perimeter, whichever is the greater. (Regulation 34 of the 1961 General Surveying Practice Regulations gives 1 in 8000.)"
+      },
+      "ratio": {
+       "value": 12000,
+       "source": "wa-spp03-v2",
+       "clause": "13.2 Linear Misclose",
+       "status": "verified-professional-standard",
+       "note": "0.02 m or 1:12,000 of the perimeter, whichever is the greater. (Regulation 34 of the 1961 General Surveying Practice Regulations gives 1 in 8000.)"
+      },
+      "lin_mode": {
+       "value": "max",
+       "source": "wa-spp03-v2",
+       "clause": "13.2 Linear Misclose",
+       "status": "verified-professional-standard",
+       "note": "0.02 m or 1:12,000 of the perimeter, whichever is the greater. (Regulation 34 of the 1961 General Surveying Practice Regulations gives 1 in 8000.)"
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "12√K mm (3rd-order / SCIMS Class LC level) used as the SurveyKit default – no jurisdiction-specific levelling tolerance verified."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    },
+    "rural": {
+     "label": "Rural survey",
+     "values": {
+      "ang_const": {
+       "value": 0.0,
+       "source": "wa-spp03-v2",
+       "clause": "13.1 Angular Misclose",
+       "status": "verified-professional-standard",
+       "note": "30\" × √(number of angles) or 2′, whichever is the lesser."
+      },
+      "ang_k": {
+       "value": 30.0,
+       "source": "wa-spp03-v2",
+       "clause": "13.1 Angular Misclose",
+       "status": "verified-professional-standard",
+       "note": "30\" × √(number of angles) or 2′, whichever is the lesser."
+      },
+      "ang_cap": {
+       "value": 120.0,
+       "source": "wa-spp03-v2",
+       "clause": "13.1 Angular Misclose",
+       "status": "verified-professional-standard",
+       "note": "30\" × √(number of angles) or 2′, whichever is the lesser."
+      },
+      "lin_const_mm": {
+       "value": 40.0,
+       "source": "wa-spp03-v2",
+       "clause": "13.2 Linear Misclose",
+       "status": "verified-professional-standard",
+       "note": "0.04 m or 1:6,000 of the perimeter, whichever is the greater."
+      },
+      "ratio": {
+       "value": 6000,
+       "source": "wa-spp03-v2",
+       "clause": "13.2 Linear Misclose",
+       "status": "verified-professional-standard",
+       "note": "0.04 m or 1:6,000 of the perimeter, whichever is the greater."
+      },
+      "lin_mode": {
+       "value": "max",
+       "source": "wa-spp03-v2",
+       "clause": "13.2 Linear Misclose",
+       "status": "verified-professional-standard",
+       "note": "0.04 m or 1:6,000 of the perimeter, whichever is the greater."
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "12√K mm (3rd-order / SCIMS Class LC level) used as the SurveyKit default – no jurisdiction-specific levelling tolerance verified."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    }
+   }
+  },
+  "TAS": {
+   "name": "Tasmania",
+   "default": "cadastral",
+   "profiles": {
+    "cadastral": {
+     "label": "Cadastral",
+     "values": {
+      "ang_const": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "Directions 3.1.3.1 limit each bearing to 2′ or a 0.025 m end displacement – no traverse misclose formula; SurveyKit default used."
+      },
+      "ang_k": {
+       "value": 30.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "Directions 3.1.3.1 limit each bearing to 2′ or a 0.025 m end displacement – no traverse misclose formula; SurveyKit default used."
+      },
+      "ang_cap": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "Directions 3.1.3.1 limit each bearing to 2′ or a 0.025 m end displacement – no traverse misclose formula; SurveyKit default used."
+      },
+      "lin_const_mm": {
+       "value": 25.0,
+       "source": "tas-sd-2020",
+       "clause": "3.1.3.2",
+       "status": "verified-statutory",
+       "note": "Max error in any distance: 1:10,000 or 0.025 m, whichever is greater – applied here to the traverse misclose as a proxy."
+      },
+      "ratio": {
+       "value": 10000,
+       "source": "tas-sd-2020",
+       "clause": "3.1.3.2",
+       "status": "verified-statutory",
+       "note": "Max error in any distance: 1:10,000 or 0.025 m, whichever is greater – applied here to the traverse misclose as a proxy."
+      },
+      "lin_mode": {
+       "value": "max",
+       "source": "tas-sd-2020",
+       "clause": "3.1.3.2",
+       "status": "verified-statutory",
+       "note": "Max error in any distance: 1:10,000 or 0.025 m, whichever is greater – applied here to the traverse misclose as a proxy."
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "12√K mm (3rd-order / SCIMS Class LC level) used as the SurveyKit default – no jurisdiction-specific levelling tolerance verified."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    }
+   }
+  },
+  "NT": {
+   "name": "Northern Territory",
+   "default": "default",
+   "profiles": {
+    "default": {
+     "label": "SurveyKit defaults – NT values not verified",
+     "values": {
+      "ang_const": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "NT Surveyors Board directions could not be retrieved – unverified."
+      },
+      "ang_k": {
+       "value": 30.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "NT Surveyors Board directions could not be retrieved – unverified."
+      },
+      "ang_cap": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "NT Surveyors Board directions could not be retrieved – unverified."
+      },
+      "lin_const_mm": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "ratio": {
+       "value": 5000,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "lin_mode": {
+       "value": "sum",
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "12√K mm (3rd-order / SCIMS Class LC level) used as the SurveyKit default – no jurisdiction-specific levelling tolerance verified."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    }
+   }
+  },
+  "ACT": {
+   "name": "Australian Capital Territory",
+   "default": "cadastral",
+   "profiles": {
+    "cadastral": {
+     "label": "Cadastral",
+     "values": {
+      "ang_const": {
+       "value": 10.0,
+       "source": "act-pd-2021",
+       "clause": "Direction 30",
+       "status": "verified-statutory",
+       "note": "10\" + 10\"√n, never more than 1 minute."
+      },
+      "ang_k": {
+       "value": 10.0,
+       "source": "act-pd-2021",
+       "clause": "Direction 30",
+       "status": "verified-statutory",
+       "note": "10\" + 10\"√n, never more than 1 minute."
+      },
+      "ang_cap": {
+       "value": 60.0,
+       "source": "act-pd-2021",
+       "clause": "Direction 30",
+       "status": "verified-statutory",
+       "note": "10\" + 10\"√n, never more than 1 minute."
+      },
+      "lin_const_mm": {
+       "value": 15.0,
+       "source": "act-pd-2021",
+       "clause": "Direction 32(b)",
+       "status": "verified-statutory",
+       "note": "Misclose vector ≤ 15 mm + 20 ppm of the perimeter."
+      },
+      "ratio": {
+       "value": 50000,
+       "source": "act-pd-2021",
+       "clause": "Direction 32(b)",
+       "status": "verified-statutory",
+       "note": "Misclose vector ≤ 15 mm + 20 ppm of the perimeter."
+      },
+      "lin_mode": {
+       "value": "sum",
+       "source": "act-pd-2021",
+       "clause": "Direction 32(b)",
+       "status": "verified-statutory",
+       "note": "Misclose vector ≤ 15 mm + 20 ppm of the perimeter."
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "12√K mm (3rd-order / SCIMS Class LC level) used as the SurveyKit default – no jurisdiction-specific levelling tolerance verified."
+      },
+      "pdop_max": {
+       "value": 6.0,
+       "source": "act-g10-2012",
+       "clause": "4.2.9",
+       "status": "verified-professional-standard",
+       "note": "No positional data when PDOP exceeds 6."
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.02,
+       "source": "act-g10-2012",
+       "clause": "6.3",
+       "status": "verified-professional-standard",
+       "note": "20 mm horizontal at 95% (repeat-occupation tolerance) – compared here with receiver-reported RMS as a proxy."
+      },
+      "rms_v_max": {
+       "value": 0.03,
+       "source": "act-g10-2012",
+       "clause": "6.3",
+       "status": "verified-professional-standard",
+       "note": "30 mm vertical at 95% – compared with receiver RMS as a proxy."
+      }
+     }
+    }
+   }
+  },
+  "PNG": {
+   "name": "Papua New Guinea",
+   "default": "third_order",
+   "profiles": {
+    "third_order": {
+     "label": "Third-order control traverse (1:5,000)",
+     "values": {
+      "ang_const": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "The Regulation gives per-angle probable errors, not a traverse angular misclose – SurveyKit default."
+      },
+      "ang_k": {
+       "value": 30.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "The Regulation gives per-angle probable errors, not a traverse angular misclose – SurveyKit default."
+      },
+      "ang_cap": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "The Regulation gives per-angle probable errors, not a traverse angular misclose – SurveyKit default."
+      },
+      "lin_const_mm": {
+       "value": 0.0,
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 1(a) Traverses",
+       "status": "verified-statutory",
+       "note": "Third-order traverse position check 1:5,000."
+      },
+      "ratio": {
+       "value": 5000,
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 1(a) Traverses",
+       "status": "verified-statutory",
+       "note": "Third-order traverse position check 1:5,000."
+      },
+      "lin_mode": {
+       "value": "sum",
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 1(a) Traverses",
+       "status": "verified-statutory",
+       "note": "Third-order traverse position check 1:5,000."
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 1(b)",
+       "status": "common-practice-unverified",
+       "note": "Third order printed as '.012K metres' in the reprint (the √ sign is probably lost in transcription) – unverified; check the gazetted copy."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    },
+    "class_a": {
+     "label": "Class A survey (1:15,000)",
+     "values": {
+      "ang_const": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "The Regulation gives per-angle probable errors, not a traverse angular misclose – SurveyKit default."
+      },
+      "ang_k": {
+       "value": 30.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "The Regulation gives per-angle probable errors, not a traverse angular misclose – SurveyKit default."
+      },
+      "ang_cap": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "The Regulation gives per-angle probable errors, not a traverse angular misclose – SurveyKit default."
+      },
+      "lin_const_mm": {
+       "value": 0.0,
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 2(a)",
+       "status": "verified-statutory",
+       "note": "Class A: error of closure 1:15,000."
+      },
+      "ratio": {
+       "value": 15000,
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 2(a)",
+       "status": "verified-statutory",
+       "note": "Class A: error of closure 1:15,000."
+      },
+      "lin_mode": {
+       "value": "sum",
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 2(a)",
+       "status": "verified-statutory",
+       "note": "Class A: error of closure 1:15,000."
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 1(b)",
+       "status": "common-practice-unverified",
+       "note": "Third order printed as '.012K metres' in the reprint (the √ sign is probably lost in transcription) – unverified; check the gazetted copy."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    },
+    "class_b": {
+     "label": "Class B survey (1:10,000)",
+     "values": {
+      "ang_const": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "The Regulation gives per-angle probable errors, not a traverse angular misclose – SurveyKit default."
+      },
+      "ang_k": {
+       "value": 30.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "The Regulation gives per-angle probable errors, not a traverse angular misclose – SurveyKit default."
+      },
+      "ang_cap": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "The Regulation gives per-angle probable errors, not a traverse angular misclose – SurveyKit default."
+      },
+      "lin_const_mm": {
+       "value": 0.0,
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 2(a)",
+       "status": "verified-statutory",
+       "note": "Class B: 1:10,000."
+      },
+      "ratio": {
+       "value": 10000,
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 2(a)",
+       "status": "verified-statutory",
+       "note": "Class B: 1:10,000."
+      },
+      "lin_mode": {
+       "value": "sum",
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 2(a)",
+       "status": "verified-statutory",
+       "note": "Class B: 1:10,000."
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 1(b)",
+       "status": "common-practice-unverified",
+       "note": "Third order printed as '.012K metres' in the reprint (the √ sign is probably lost in transcription) – unverified; check the gazetted copy."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    },
+    "class_c": {
+     "label": "Class C survey (1:8,000)",
+     "values": {
+      "ang_const": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "The Regulation gives per-angle probable errors, not a traverse angular misclose – SurveyKit default."
+      },
+      "ang_k": {
+       "value": 30.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "The Regulation gives per-angle probable errors, not a traverse angular misclose – SurveyKit default."
+      },
+      "ang_cap": {
+       "value": 0.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": "The Regulation gives per-angle probable errors, not a traverse angular misclose – SurveyKit default."
+      },
+      "lin_const_mm": {
+       "value": 0.0,
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 2(a)",
+       "status": "verified-statutory",
+       "note": "Class C: 1:8,000."
+      },
+      "ratio": {
+       "value": 8000,
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 2(a)",
+       "status": "verified-statutory",
+       "note": "Class C: 1:8,000."
+      },
+      "lin_mode": {
+       "value": "sum",
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 2(a)",
+       "status": "verified-statutory",
+       "note": "Class C: 1:8,000."
+      },
+      "lev_k": {
+       "value": 12.0,
+       "source": "png-scr-1969",
+       "clause": "Schedule 4 Table 1(b)",
+       "status": "common-practice-unverified",
+       "note": "Third order printed as '.012K metres' in the reprint (the √ sign is probably lost in transcription) – unverified; check the gazetted copy."
+      },
+      "pdop_max": {
+       "value": 4.0,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "sats_min": {
+       "value": 6,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_h_max": {
+       "value": 0.05,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      },
+      "rms_v_max": {
+       "value": 0.08,
+       "source": "surveykit",
+       "clause": "",
+       "status": "common-practice-unverified",
+       "note": ""
+      }
+     }
+    }
+   }
+  }
+ }
+}

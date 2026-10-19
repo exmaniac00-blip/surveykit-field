@@ -1,0 +1,623 @@
+{
+ "obs_columns": [
+  "station",
+  "bs",
+  "fs",
+  "h_angle",
+  "bearing",
+  "distance",
+  "dist_type",
+  "zenith",
+  "hi",
+  "ht",
+  "code",
+  "description",
+  "attributes",
+  "notes"
+ ],
+ "level_columns": [
+  "station",
+  "bs",
+  "is",
+  "fs",
+  "remark"
+ ],
+ "gnss_columns": [
+  "id",
+  "lat",
+  "lon",
+  "e",
+  "n",
+  "height",
+  "ant_h",
+  "pdop",
+  "hdop",
+  "sats",
+  "solution",
+  "rms_h",
+  "rms_v",
+  "datetime",
+  "code",
+  "attributes",
+  "notes"
+ ],
+ "solutions": [
+  "Fixed",
+  "Float",
+  "DGPS",
+  "Autonomous"
+ ],
+ "photo_types": [
+  "Setup (instrument over point, tripod)",
+  "Measurement/reading",
+  "Instrument height",
+  "Location (surroundings, marker)",
+  "Other"
+ ],
+ "datums": {
+  "Australia": [
+   [
+    "EPSG:7849",
+    "GDA2020 / MGA zone 49 (EPSG:7849) (current)"
+   ],
+   [
+    "EPSG:7850",
+    "GDA2020 / MGA zone 50 (EPSG:7850) (current)"
+   ],
+   [
+    "EPSG:7851",
+    "GDA2020 / MGA zone 51 (EPSG:7851) (current)"
+   ],
+   [
+    "EPSG:7852",
+    "GDA2020 / MGA zone 52 (EPSG:7852) (current)"
+   ],
+   [
+    "EPSG:7853",
+    "GDA2020 / MGA zone 53 (EPSG:7853) (current)"
+   ],
+   [
+    "EPSG:7854",
+    "GDA2020 / MGA zone 54 (EPSG:7854) – Mount Isa / NW QLD (current)"
+   ],
+   [
+    "EPSG:7855",
+    "GDA2020 / MGA zone 55 (EPSG:7855) – Cairns / Far North QLD (current)"
+   ],
+   [
+    "EPSG:7856",
+    "GDA2020 / MGA zone 56 (EPSG:7856) – Brisbane / SE QLD (current)"
+   ],
+   [
+    "EPSG:28349",
+    "GDA94 / MGA zone 49 (EPSG:28349) (previous)"
+   ],
+   [
+    "EPSG:28350",
+    "GDA94 / MGA zone 50 (EPSG:28350) (previous)"
+   ],
+   [
+    "EPSG:28351",
+    "GDA94 / MGA zone 51 (EPSG:28351) (previous)"
+   ],
+   [
+    "EPSG:28352",
+    "GDA94 / MGA zone 52 (EPSG:28352) (previous)"
+   ],
+   [
+    "EPSG:28353",
+    "GDA94 / MGA zone 53 (EPSG:28353) (previous)"
+   ],
+   [
+    "EPSG:28354",
+    "GDA94 / MGA zone 54 (EPSG:28354) – Mount Isa / NW QLD (previous)"
+   ],
+   [
+    "EPSG:28355",
+    "GDA94 / MGA zone 55 (EPSG:28355) – Cairns / Far North QLD (previous)"
+   ],
+   [
+    "EPSG:28356",
+    "GDA94 / MGA zone 56 (EPSG:28356) – Brisbane / SE QLD (previous)"
+   ],
+   [
+    "EPSG:20349",
+    "AGD84 / AMG zone 49 (EPSG:20349) (legacy)"
+   ],
+   [
+    "EPSG:20350",
+    "AGD84 / AMG zone 50 (EPSG:20350) (legacy)"
+   ],
+   [
+    "EPSG:20351",
+    "AGD84 / AMG zone 51 (EPSG:20351) (legacy)"
+   ],
+   [
+    "EPSG:20352",
+    "AGD84 / AMG zone 52 (EPSG:20352) (legacy)"
+   ],
+   [
+    "EPSG:20353",
+    "AGD84 / AMG zone 53 (EPSG:20353) (legacy)"
+   ],
+   [
+    "EPSG:20354",
+    "AGD84 / AMG zone 54 (EPSG:20354) (legacy)"
+   ],
+   [
+    "EPSG:20355",
+    "AGD84 / AMG zone 55 (EPSG:20355) (legacy)"
+   ],
+   [
+    "EPSG:20356",
+    "AGD84 / AMG zone 56 (EPSG:20356) (legacy)"
+   ],
+   [
+    "EPSG:20249",
+    "AGD66 / AMG zone 49 (EPSG:20249) (legacy)"
+   ],
+   [
+    "EPSG:20250",
+    "AGD66 / AMG zone 50 (EPSG:20250) (legacy)"
+   ],
+   [
+    "EPSG:20251",
+    "AGD66 / AMG zone 51 (EPSG:20251) (legacy)"
+   ],
+   [
+    "EPSG:20252",
+    "AGD66 / AMG zone 52 (EPSG:20252) (legacy)"
+   ],
+   [
+    "EPSG:20253",
+    "AGD66 / AMG zone 53 (EPSG:20253) (legacy)"
+   ],
+   [
+    "EPSG:20254",
+    "AGD66 / AMG zone 54 (EPSG:20254) – PNG west (legacy) (legacy)"
+   ],
+   [
+    "EPSG:20255",
+    "AGD66 / AMG zone 55 (EPSG:20255) – PNG central (legacy) (legacy)"
+   ],
+   [
+    "EPSG:20256",
+    "AGD66 / AMG zone 56 (EPSG:20256) – PNG east (legacy) (legacy)"
+   ]
+  ],
+  "Papua New Guinea": [
+   [
+    "EPSG:5550",
+    "PNG94 / PNGMG94 zone 54 (EPSG:5550) – Western Province (141–144°E) (current)"
+   ],
+   [
+    "EPSG:5551",
+    "PNG94 / PNGMG94 zone 55 (EPSG:5551) – Port Moresby, Lae, Highlands (144–150°E) (current)"
+   ],
+   [
+    "EPSG:5552",
+    "PNG94 / PNGMG94 zone 56 (EPSG:5552) – New Britain, New Ireland, Bougainville (150–156°E) (current)"
+   ],
+   [
+    "EPSG:20254",
+    "AGD66 / AMG zone 54 (EPSG:20254) – PNG west (legacy) (legacy)"
+   ],
+   [
+    "EPSG:20255",
+    "AGD66 / AMG zone 55 (EPSG:20255) – PNG central (legacy) (legacy)"
+   ],
+   [
+    "EPSG:20256",
+    "AGD66 / AMG zone 56 (EPSG:20256) – PNG east (legacy) (legacy)"
+   ]
+  ]
+ },
+ "verticals": [
+  "AHD",
+  "EPSG:7841",
+  "ELL",
+  "LOCAL_MSL"
+ ],
+ "workflow_steps": {
+  "adjust": "Adjust traverse",
+  "qaqc": "QA/QC checks",
+  "coords": "Coordinate list",
+  "prelim_plan": "Preliminary plan (PNG)",
+  "dem": "DEM surface",
+  "contours": "Contour sheet (PDF)",
+  "cutfill": "Cut / fill volumes",
+  "dem_dxf": "DEM / contours DXF",
+  "pdf_report": "Full report (PDF + HTML)",
+  "docx_report": "Word report (DOCX)",
+  "survey_plan": "Survey plan (PDF)",
+  "cad": "CAD export (points + plan DXF)"
+ },
+ "workflow_presets": [
+  {
+   "id": "adjust-qa-plan",
+   "name": "Adjust + QA/QC + coord list + prelim plan",
+   "steps": [
+    "adjust",
+    "qaqc",
+    "coords",
+    "prelim_plan"
+   ]
+  },
+  {
+   "id": "dem-cutfill",
+   "name": "DEM + contours + cut/fill + DXF/PDF",
+   "steps": [
+    "dem",
+    "contours",
+    "cutfill",
+    "dem_dxf"
+   ]
+  },
+  {
+   "id": "full-deliverables",
+   "name": "Full report + plan + CAD",
+   "steps": [
+    "pdf_report",
+    "docx_report",
+    "survey_plan",
+    "cad"
+   ]
+  }
+ ],
+ "new_session": {
+  "schema_version": 5,
+  "project": {
+   "title": "",
+   "job_no": "",
+   "client": "",
+   "surveyor": "",
+   "date": "",
+   "location": "",
+   "instrument": "",
+   "notes": "",
+   "project_no": "",
+   "client_code": "",
+   "folder_name": ""
+  },
+  "datum": {
+   "region": "Australia",
+   "horizontal": "EPSG:7856",
+   "vertical": "AHD",
+   "local": {
+    "origin_local_e": 1000.0,
+    "origin_local_n": 5000.0,
+    "origin_rl": 100.0,
+    "origin_grid_e": null,
+    "origin_grid_n": null,
+    "rotation_deg": 0.0,
+    "scale": 1.0,
+    "assumed_rl": 100.0,
+    "height_offset": 0.0,
+    "grid_code": "EPSG:7856"
+   },
+   "notes": ""
+  },
+  "traverse": {
+   "kind": "closed",
+   "mode": "angles",
+   "start_station": "",
+   "start_e": null,
+   "start_n": null,
+   "start_azimuth": "",
+   "end_e": null,
+   "end_n": null,
+   "closing_azimuth": "",
+   "method": "bowditch",
+   "adjust_angles": true,
+   "start_datum": "",
+   "end_datum": "",
+   "start_rl": null,
+   "start_control": "",
+   "end_control": "",
+   "corrections": {
+    "apply": false,
+    "mean_rl": null,
+    "geoid_n": 0.0
+   }
+  },
+  "observations": [],
+  "levelling": {
+   "start_rl": null,
+   "close_rl": null,
+   "length_km": null,
+   "rows": [],
+   "bm_point": "",
+   "close_point": ""
+  },
+  "settings": {
+   "ang_k": 25.0,
+   "ratio": 5000,
+   "lev_k": 12.0,
+   "short_leg": 10.0,
+   "long_leg": 1000.0,
+   "hi_min": 0.5,
+   "hi_max": 2.5,
+   "ht_min": 0.0,
+   "ht_max": 5.0,
+   "zenith_warn": 30.0,
+   "required_photo_types": [],
+   "pdop_max": 4.0,
+   "sats_min": 6,
+   "rms_h_max": 0.05,
+   "rms_v_max": 0.08,
+   "ang_const": 0.0,
+   "ang_cap": 120.0,
+   "lin_const_mm": 10.0,
+   "lin_mode": "sum"
+  },
+  "gnss": {
+   "points": [],
+   "crs": "",
+   "height_type": "ellipsoidal",
+   "geoid_n": 0.0,
+   "subtract_ant": false
+  },
+  "imported": {
+   "points": [],
+   "obs": [],
+   "source": ""
+  },
+  "design": {
+   "points": []
+  },
+  "dem": {
+   "sources": [
+    "GNSS",
+    "Imported",
+    "Traverse"
+   ],
+   "codes": [],
+   "exclude_flagged": true,
+   "use_levelling": true,
+   "interval": 0.5,
+   "major_every": 5,
+   "cell": 1.0,
+   "boundary": "",
+   "breaklines": "",
+   "hillshade": false,
+   "show_on_map": true,
+   "opacity": 0.6,
+   "show_tin": false
+  },
+  "branding": {
+   "logo_b64": "",
+   "position": "right",
+   "size_mm": 25.0,
+   "name": ""
+  },
+  "cutfill": {
+   "design": "level",
+   "level_rl": null,
+   "plane_e": null,
+   "plane_n": null,
+   "plane_rl": null,
+   "plane_grade": 0.0,
+   "plane_bearing": 0.0,
+   "boundary": "",
+   "method": "grid",
+   "cell": 1.0,
+   "bulking": 1.0,
+   "shrink": 0.0,
+   "profile": "",
+   "in_report": true
+  },
+  "setout": {
+   "station": "",
+   "backsight": "",
+   "bs_bearing": "",
+   "hi": 1.5,
+   "ht": 1.8,
+   "points": [],
+   "line": "",
+   "use_dem": true
+  },
+  "plan": {
+   "state": "QLD",
+   "sheet": "A3",
+   "scale": "auto",
+   "parcel": "",
+   "show_points": true,
+   "notes": "",
+   "title": "",
+   "plan_no": ""
+  },
+  "feature_codes": {
+   "custom": [],
+   "categories": [],
+   "colour_by_category": false,
+   "library_name": ""
+  },
+  "tolerances": {
+   "jurisdiction": "QLD",
+   "profile": "standard"
+  },
+  "templates": {
+   "report": {
+    "kind": "report",
+    "name": "QLD standard report",
+    "jurisdiction": "QLD",
+    "status": "",
+    "sections": [
+     {
+      "id": "title",
+      "include": true
+     },
+     {
+      "id": "datum",
+      "include": true
+     },
+     {
+      "id": "control",
+      "include": true
+     },
+     {
+      "id": "observations",
+      "include": true
+     },
+     {
+      "id": "misclose",
+      "include": true
+     },
+     {
+      "id": "plan",
+      "include": true
+     },
+     {
+      "id": "legs",
+      "include": true
+     },
+     {
+      "id": "coords",
+      "include": true
+     },
+     {
+      "id": "levelling",
+      "include": true
+     },
+     {
+      "id": "cross_control",
+      "include": true
+     },
+     {
+      "id": "corrections",
+      "include": true
+     },
+     {
+      "id": "gnss",
+      "include": true
+     },
+     {
+      "id": "dem",
+      "include": true
+     },
+     {
+      "id": "cutfill",
+      "include": true
+     },
+     {
+      "id": "imported",
+      "include": true
+     },
+     {
+      "id": "design",
+      "include": true
+     },
+     {
+      "id": "code_legend",
+      "include": true
+     },
+     {
+      "id": "tolerances",
+      "include": true
+     },
+     {
+      "id": "qaqc",
+      "include": true
+     },
+     {
+      "id": "photos",
+      "include": true
+     },
+     {
+      "id": "notes",
+      "include": true
+     }
+    ],
+    "layout": {
+     "page": "A4",
+     "orientation": "landscape",
+     "margins_mm": [
+      12.0,
+      12.0,
+      12.0,
+      12.0
+     ],
+     "logo": true,
+     "title_fields": [
+      "job_no",
+      "client",
+      "surveyor",
+      "date",
+      "location",
+      "instrument"
+     ],
+     "header_text": "",
+     "footer_text": ""
+    }
+   },
+   "plan": {
+    "kind": "plan",
+    "name": "QLD survey plan",
+    "jurisdiction": "QLD",
+    "status": "",
+    "layout": {
+     "page": "A3",
+     "orientation": "landscape",
+     "margin_mm": 10.0,
+     "north_arrow": {
+      "position": "top-right",
+      "style": "arrow"
+     },
+     "scale_bar": {
+      "show": true,
+      "position": "bottom-left"
+     },
+     "legend": true,
+     "logo": true,
+     "title_fields": [
+      "title",
+      "job_no",
+      "client",
+      "surveyor",
+      "date",
+      "location"
+     ]
+    }
+   },
+   "saved": {}
+  },
+  "sync": {
+   "project": "",
+   "rev": 0,
+   "content_sha": "",
+   "synced_at": "",
+   "edited_at": "",
+   "device_id": ""
+  },
+  "field": {
+   "equipment": {
+    "instrument": "",
+    "serial": "",
+    "prism": "",
+    "prism_constant_mm": "",
+    "target": "",
+    "level": "",
+    "staff": "",
+    "gnss_receiver": "",
+    "gnss_antenna": "",
+    "base_station": "",
+    "calibration_date": ""
+   },
+   "gear": [],
+   "benchmarks": [],
+   "reference_notes": "",
+   "checks_done": false,
+   "step": 1
+  },
+  "photos": {},
+  "map": {
+   "basemap": "OpenStreetMap",
+   "show_labels": true,
+   "show_adjusted": true,
+   "show_unadjusted": false,
+   "opacity": 0.7,
+   "overlay": null
+  }
+ },
+ "schema_version": 5
+}
