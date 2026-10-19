@@ -1,5 +1,5 @@
 // Offline app shell: cache-first for the app's own files; Google APIs always go to the network.
-const CACHE = 'surveykit-field-4.0.0';
+const CACHE = 'surveykit-field-4.0.1';
 const SHELL = ['./', 'index.html', 'styles.css', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png',
   'js/app.js', 'js/calc.js', 'js/naming.js', 'js/projzip.js', 'js/store.js', 'js/session.js', 'js/sync.js', 'js/drive.js', 'js/gis.js',
   'vendor/fflate.js', 'data/options.json', 'data/tolerances.json'];

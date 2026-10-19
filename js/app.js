@@ -123,7 +123,7 @@ function viewList() {
     h('p', { class: 'hint' }, 'A zip exported from the desktop (Save / load → Export project) or shared from another phone.'),
     h('input', { type: 'file', accept: '.zip,application/zip', 'aria-label': 'Open project zip', onchange: openZipFile }),
     h('h3', {}, 'From Google Drive'),
-    h('button', { onclick: pullFromDrive }, '☁ Download a project from Drive'),
+    driveList(),
     h('p', { class: 'hint' }, 'Field Mode works fully offline. Install it: browser menu → "Add to Home screen".'));
   return out;
 }
@@ -468,17 +468,30 @@ async function autoSync() {
   if (redraw && !(typing && st.step !== 6)) render(); else header();
 }
 async function connectDrive() {
-  try { await GIS.connect(prefs.client_id, true); adapter = null; await getAdapter(); toast('Google Drive connected'); }
-  catch (e) { toast(e.message, 5000); }
+  try {
+    await GIS.connect(prefs.client_id, true); adapter = null; await getAdapter();
+    toast('Google Drive connected');
+    st.view = 'list'; st.rec = null;          // go to Projects, where the Drive projects are listed
+  } catch (e) { toast(e.message, 5000); }
   render();
 }
-async function pullFromDrive() {
+function driveList() {
+  // Lists project folders in "SurveyKit Projects" on Drive; tap one to download it to the phone.
+  const d = h('div', {});
+  if (!GIS.hasToken()) { d.append(h('p', { class: 'hint' }, 'Not connected – ⚙ Settings → Connect Google Drive.')); return d; }
+  d.append(h('p', { class: 'hint' }, 'Loading projects from Drive…'));
+  getAdapter().then((ad) => ad.listProjects()).then((names) => {
+    d.replaceChildren(...(names.length
+      ? names.map((n) => h('button', { onclick: () => pullFromDrive(n) }, '☁ ' + n))
+      : [h('p', { class: 'hint' }, 'Connected. No projects in the "SurveyKit Projects" Drive folder yet – sync a project from this phone or the desktop and it will appear here. (SurveyKit can only see files it created itself.)')]));
+  }).catch((e) => d.replaceChildren(h('p', { class: 'hint' }, 'Drive: ' + e.message)));
+  return d;
+}
+async function pullFromDrive(pick) {
   try {
     const ad = await getAdapter();
     const names = await ad.listProjects();
-    if (!names.length) return toast('No projects in SurveyKit Projects yet');
-    const pick = prompt('Project folder to download:\n' + names.join('\n'), names[0]);
-    if (!pick || !names.includes(pick)) return;
+    if (!pick || !names.includes(pick)) return toast('That project is no longer on Drive');
     const rec = { id: uuid(), session: normalise(newSession(options, prefs), options), dirty: false, updated_at: new Date().toISOString() };
     rec.session.sync = { ...SY.defaultSync(), project: pick, rev: 0 };
     rec.session.sync.content_sha = await SY.contentSha(rec.session);   // "no local edits" → plain download
