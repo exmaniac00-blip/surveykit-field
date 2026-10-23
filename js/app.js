@@ -9,7 +9,7 @@ import * as SY from './sync.js';
 import { DriveAdapter } from './drive.js';
 import * as GIS from './gis.js';
 
-export const VERSION = '4.0.0';
+export const VERSION = '4.1.0';
 const STEPS = ['Job', 'Gear', 'Ref', 'Obs', 'Photos', 'Check'];   // short – they share one row on a phone
 const $ = (s) => document.querySelector(s);
 const st = { view: 'list', step: 1, rec: null, obsTab: 'traverse', editIdx: null, checks: null, syncMsg: '', busy: false, photoStation: '' };
@@ -120,7 +120,7 @@ function viewList() {
     }
   });
   out.push(list, h('h3', {}, 'Open a project zip'),
-    h('p', { class: 'hint' }, 'A zip exported from the desktop (Save / load → Export project) or shared from another phone.'),
+    h('p', { class: 'hint' }, 'A zip exported from the desktop (💾 Project file → Export project) or shared from another phone.'),
     h('input', { type: 'file', accept: '.zip,application/zip', 'aria-label': 'Open project zip', onchange: openZipFile }),
     h('h3', {}, 'From Google Drive'),
     driveList(),
